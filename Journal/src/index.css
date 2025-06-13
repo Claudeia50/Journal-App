@@ -13,6 +13,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+#root {
+  background-image: url ('/images/radiant-aqua-light-0410-5697603.webp');
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -27,6 +31,7 @@ body {
   display: flex;
   place-items: center;
   min-width: 320px;
+  max-width: 85vw;
   min-height: 100vh;
 }
 

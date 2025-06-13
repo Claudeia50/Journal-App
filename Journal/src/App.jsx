@@ -1,35 +1,53 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { JournalProvider } from './Context/JournalContext';
+import { TodoProvider } from './Context/TodoContext';
+import { AffirmationProvider } from './Context/AffirmationContext';
+import HomePage from './Components/Pages/HomePage/HomePage';
+import JournalPage from './Components/Pages/JournalPage/JournalPage';
+import TodoPage from './Components/Pages/TodoPage/TodoPage';
+import GratitudePage from './Components/Pages/GratitudePage/GratituePage';
+import SelfCarePage from './Components/Pages/SelfCarePage/SelfCarePage';
+import Account from './Components/Pages/AccountPage/AccountPage';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    
+    <JournalProvider>
+      <TodoProvider>
+        <AffirmationProvider>
+          <BrowserRouter>
+            <Routes>
+              <Route
+                path='/'
+                element={<Account />}
+              />
+              <Route
+                path='/HomePage'
+                element={<HomePage />}
+              />
+              <Route
+                path='/JournalPage'
+                element={<JournalPage />}
+              />
+              <Route
+                path='/TodoPage'
+                element={<TodoPage />}
+              />
+              <Route
+                path='/GratitudePage'
+                element={<GratitudePage />}
+              />
+              <Route
+                path='/SelfCarePage'
+                element={<SelfCarePage />}
+              />
+            </Routes>
+          </BrowserRouter>
+        </AffirmationProvider>
+      </TodoProvider>
+    </JournalProvider>
+  );
 }
 
-export default App
+export default App;
