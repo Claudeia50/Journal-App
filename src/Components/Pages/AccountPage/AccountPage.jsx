@@ -100,8 +100,11 @@ const CreateAccountModal = () => {
                   required
                 />
                 {error && <p className={styles.error}>{error}</p>}
-                <button type='submit'>
-                  {mode === 'signin' ? 'Sign In' : 'Create Account'}
+                <button
+                  className={styles.switch}
+                  type='submit'
+                >
+                  {mode === 'signin' ? 'Sign In' : 'Create'}
                 </button>
                 <button
                   type='button'
@@ -122,7 +125,7 @@ const CreateAccountModal = () => {
             <br />
             <br />
             Every story, every reflection, every fleeting thought deserves a
-            space to be captured. Inkwell is more than a journaling app—it's a
+            space to be captured. Reverie is more than a journaling app—it's a
             sanctuary for self-discovery, a canvas for creativity, and a vault
             for personal growth.
             <br />
@@ -130,7 +133,7 @@ const CreateAccountModal = () => {
             Start each day with gratitude, embrace moments of self-care, and
             stay organized with thoughtful to-do lists. Whether you're
             chronicling life’s beauty, reflecting on challenges, or setting
-            intentions for tomorrow, Inkwell is designed to meet you where you
+            intentions for tomorrow, Reverie is designed to meet you where you
             are.
             <br />
             <br />
