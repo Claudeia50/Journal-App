@@ -1,0 +1,128 @@
+.date,
+.titles,
+.textarea {
+  display: block;
+  margin: 0.5rem auto;
+  width: 85%;
+  padding: 0.6rem;
+  font-size: var(--font-size-base);
+  font-family: var(--font-serif);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(255, 215, 0, 0.2);
+  background-color: #fff;
+  color: #333;
+}
+
+.textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.entry {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.5rem 1.5rem;
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  border: none;
+  border-radius: 10px;
+  font-size: var(--font-size-base);
+  cursor: pointer;
+  font-family: var(--font-serif);
+  box-shadow: 0 4px 6px rgba(255, 215, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.entry:hover {
+  background-color: #f5f5dc;
+  color: var(--primary-color);
+}
+
+.save {
+  margin: 1rem auto;
+  padding: 0.8rem;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-left: 3px solid var(--accent-color);
+  border-radius: 10px;
+  font-size: var(--font-size-small);
+}
+
+.save h2 {
+  color: var(--accent-color);
+  margin-bottom: 0.3rem;
+  font-size: var(--font-size-base);
+}
+
+.save p {
+  margin: 0.2rem 0;
+}
+
+.backup {
+  display: none;
+}
+
+.save {
+  display: none;
+}
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
+  .date {
+    width: 85%;
+    height: 30px;
+    font-size: 16px;
+  }
+  .titles {
+    width: 85%;
+    height: 45px;
+    font-size: 18px;
+  }
+  .textarea {
+    height: 120px;
+    resize: vertical;
+  }
+  .entry {
+    width: 140px;
+    height: 40px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  .date,
+  .titles,
+  .textarea {
+    width: 90vw;
+    height: 35px;
+    font-size: 24px;
+  }
+
+  .textarea {
+    height: 120px;
+    resize: vertical;
+  }
+
+  .entry {
+    width: 140px;
+    height: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .date,
+  .titles,
+  .textarea {
+    width: 80vw;
+    height: 40px;
+    font-size: 28px;
+  }
+  .textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  .entry {
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+  }
+}

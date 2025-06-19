@@ -1,0 +1,165 @@
+.navbarContainer {
+  background-color: #0b1d3a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo2 {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 0.5rem;
+  filter: drop-shadow(0 0 4px rgb(255, 214, 8));
+}
+
+.nav {
+  width: 95vw;
+}
+
+.navLink {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: #f5deb3;
+  font-family: 'Playfair Display', serif;
+  font-size: 10px;
+  position: relative;
+  padding: 0.3rem 0;
+  width: 100%;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.link::after {
+  position: absolute;
+  width: 60%;
+  height: 2px;
+  bottom: -2px;
+  left: 20%;
+  background-color: rgb(255, 214, 8);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease-out;
+}
+
+.link:hover {
+  color: rgb(255, 214, 8);
+}
+
+.link:hover::after {
+  transform: scaleX(1);
+}
+
+.link:active {
+  background-color: rgba(255, 215, 0, 0.1);
+  border-radius: 6px;
+}
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
+  .logo2 {
+    height: 50px;
+    width: 50px;
+  }
+
+  .link {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .nav {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-around;
+    position: relative;
+    text-align: center;
+    align-items: center;
+  }
+
+  .navLink {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+
+    padding: 0;
+  }
+
+  .link {
+    font-size: 16px;
+  }
+
+  .logo2 {
+    width: 85px;
+    height: 85px;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  .nav {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-around;
+    position: relative;
+    text-align: center;
+    align-items: center;
+  }
+
+  .navLink {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  .link {
+    font-size: 24px;
+  }
+
+  .logo2 {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-around;
+    position: relative;
+    text-align: center;
+    align-items: center;
+  }
+
+  .navLink {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+
+    padding-top: 20px;
+  }
+
+  .link {
+    font-size: 32px;
+  }
+
+  .logo2 {
+    width: 150px;
+    height: 150px;
+  }
+}

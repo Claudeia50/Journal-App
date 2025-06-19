@@ -1,0 +1,127 @@
+:root {
+  --primary-color: #0b1d3a;
+  --accent-color: rgb(255, 214, 8);
+  --text-color: #f5deb3;
+  --error-color: #ff6f61;
+
+  --font-serif: 'Playfair Display', serif;
+
+  --font-size-base: 16px;
+  --font-size-large: 20px;
+  --font-size-heading: 24px;
+}
+
+.body {
+  width: 95vw;
+}
+
+html {
+  font-family: var(--font-serif);
+  font-size: var(--font-size-base);
+  color: var(--accent-color);
+}
+h1 {
+  text-decoration: underline;
+  font-size: 28px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: var(--accent-color);
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  padding: 0 1rem;
+  font-size: var(--font-size-base);
+}
+
+h2 {
+  font-size: 20px;
+  margin: 0;
+  color: var(--accent-color);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+textarea {
+  width: 95vw;
+  height: 450px;
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 28px;
+    margin: 0;
+  }
+
+  p {
+    font-size: 18px;
+  }
+  span {
+    font-size: 18px;
+  }
+
+  textarea {
+    height: 650px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 32px;
+    margin: 0;
+  }
+
+  p {
+    font-size: 24px;
+  }
+
+  span {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 32px;
+    margin: 0;
+  }
+  p {
+    font-size: 24px;
+  }
+
+  span {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 52px;
+  }
+
+  h2 {
+    font-size: 48px;
+  }
+
+  p {
+    font-size: 32px;
+  }
+
+  span {
+    font-size: 32px;
+  }
+}
