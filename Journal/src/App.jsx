@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { JournalProvider } from './context/JournalContext';
-import { TodoProvider } from './context/TodoContext';
-import { AffirmationProvider } from './context/AffirmationContext';
+import { JournalProvider } from './Context/JournalContext';
+import { TodoProvider } from './Context/TodoContext';
+import { AffirmationProvider } from './Context/AffirmationContext';
 import HomePage from './Components/Pages/HomePage/HomePage';
 import JournalPage from './Components/Pages/JournalPage/JournalPage';
 import TodoPage from './Components/Pages/TodoPage/TodoPage';
