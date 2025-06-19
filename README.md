@@ -30,7 +30,7 @@
 
 ```bash
 git clone https://https://github.com/Claudeia50/Journal-App
-cd Journal App-journal
+cd Journal App
 npm install
 
 
