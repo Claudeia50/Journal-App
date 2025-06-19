@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import styles from './JournalPage.module.css';
 import Navbar from '../../Navbar/Navbar';
-import { JournalContext } from '../../../Context/JournalContext';
+import { JournalContext } from '../../../context/JournalContext';
 import Footer from '../../Footer/Footer';
 console.log('📓 JournalPage loaded');
 function JournalPage() {

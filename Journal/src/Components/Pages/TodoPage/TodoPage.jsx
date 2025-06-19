@@ -3,7 +3,7 @@ import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
-import { TodoContext } from '../../../Context/TodoContext';
+import { TodoContext } from '../../../context/TodoContext';
 import Navbar from '../../Navbar/Navbar';
 import styles from './TodoPage.module.css';
 import Footer from '../../Footer/Footer';

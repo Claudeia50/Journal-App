@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useAffirmation } from '../../../Context/AffirmationContext';
+import { useAffirmation } from '../../../context/AffirmationContext';
 import Navbar from '../../Navbar/Navbar';
 import styles from './HomePage.module.css';
 import Footer from '../../Footer/Footer';
